@@ -264,7 +264,7 @@ fieldset[disabled] .s-btn {
 }
 
 .s-btn--white-bg:focus, .s-btn--white-bg:hover {
-  color: #13b1cd;
+  color: #F01931;
   background: #fff;
 }
 
@@ -278,8 +278,8 @@ fieldset[disabled] .s-btn {
 
 .s-btn--dark-bg:focus, .s-btn--dark-bg:hover {
   color: #fff;
-  background: #13b1cd;
-  border-color: #13b1cd;
+  background: #F01931;
+  border-color: #F01931;
 }
 
 .s-btn--dark-brd {
@@ -298,16 +298,16 @@ fieldset[disabled] .s-btn {
 
 .s-btn--primary-bg {
   color: #fff;
-  background: #13b1cd;
+  background: #F01931;
   border-width: 0.0625rem;
   border-style: solid;
-  border-color: #13b1cd;
+  border-color: #F01931;
 }
 
 .s-btn--primary-bg:focus, .s-btn--primary-bg:hover {
   color: #fff;
-  background: #13b1cd;
-  border-color: #13b1cd;
+  background: #F01931;
+  border-color: #F01931;
 }
 
 .s-btn--primary-brd {
@@ -717,8 +717,8 @@ fieldset[disabled] .s-btn {
 
 .s-icon--white-brd:focus, .s-icon--white-brd:hover {
   color: #fff;
-  background: #13b1cd;
-  border-color: #13b1cd;
+  background: #F01931;
+  border-color: #F01931;
 }
 
 .s-icon--white-bg {
@@ -1222,7 +1222,7 @@ fieldset[disabled] .s-btn {
   position: relative;
   z-index: 9999;
   width: 3.125rem;
-  height: 4.525rem;
+  height: 4.825rem;
   float: right;
   overflow: hidden;
   transition-duration: 500ms;
@@ -1234,7 +1234,7 @@ fieldset[disabled] .s-btn {
 .s-header__trigger-icon {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   right: auto;
   bottom: auto;
   width: 1.375rem;
