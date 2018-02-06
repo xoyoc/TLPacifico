@@ -1,4 +1,4 @@
-$(window).load(function(){
+$(window).load(function () {
   /* One Item */
   var swiper = new Swiper('.js__swiper-one-item', {
     nextButton: '.js__swiper-btn--next',
@@ -6,7 +6,7 @@ $(window).load(function(){
     speed: 1000,
     autoplay: 7000,
     loop: true
-  });
+  })
 
   /* Slider */
   var swiper = new Swiper('.js__swiper-slider', {
@@ -15,16 +15,18 @@ $(window).load(function(){
     speed: 1000,
     autoplay: 7000,
     loop: true
-  });
+  })
 
   // Swiper Clients
   var swiper = new Swiper('.js__swiper-clients', {
-    slidesPerView: 5,
+    // slidesPerView: 5,
     spaceBetween: 50,
+    speed: 1000,
+    autoplay: 7000,
     loop: true,
     breakpoints: {
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         spaceBetween: 50
       },
       992: {
@@ -44,7 +46,7 @@ $(window).load(function(){
         spaceBetween: 0
       }
     }
-  });
+  })
 
   // Swiper News
   var swiper = new Swiper('.js__swiper-news', {
@@ -75,7 +77,7 @@ $(window).load(function(){
         spaceBetween: 0
       }
     }
-  });
+  })
 
   /* Testimonials */
   var swiper = new Swiper('.js__swiper-testimonials', {
@@ -88,5 +90,5 @@ $(window).load(function(){
     speed: 1000,
     autoplay: 7000,
     loop: true
-  });
-});
+  })
+})
