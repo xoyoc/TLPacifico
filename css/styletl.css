@@ -42,6 +42,58 @@
 	font-weight: bold;
 }
 
+.tituloGris{
+	font-weight: bold;
+	color:#4D4D4D;
+	margin-left: 2em;
+}
+
+.cajaLogNav{
+	
+}
+
+.g-bg-color--sky-light {
+  background-color: white !important;
+}
+
+
+.imagenLogNav{
+	width: 8em;
+}
+
+.imagenLogNavL{
+	width: 12em;
+	margin:1.5em 0;
+}
+
+@media (min-width: 62em) {
+  .g-container--md {
+    width: 80% !important;
+  }
+}
+
+.imgAsoc{
+	width: 10em;
+}
+
+.g-color--red{
+	color:#F01931 !important;
+}
+
+.subtituloGris{
+	font-weight: bold;
+	color:#4D4D4D;	
+}
+
+.s-btn--red-brd{
+	margin-left: 40%;
+	margin-top: 4em;
+	color: white;
+	background: #F01931;
+	border-width: 0.0625rem;
+	border-style: solid;
+	border-color: #F01931;
+}
 
 .footerLogo{
 	width: 40%;
