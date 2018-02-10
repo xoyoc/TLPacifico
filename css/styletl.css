@@ -22,7 +22,6 @@
 	text-align: center;
 }
 
-
 .textoJustificado{
 	text-align: justify;
 }
@@ -93,6 +92,10 @@
 	border-width: 0.0625rem;
 	border-style: solid;
 	border-color: #F01931;
+}
+
+.sinPaddingBottom{
+	padding-bottom: 0;
 }
 
 .footerLogo{
