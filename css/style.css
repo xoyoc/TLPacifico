@@ -491,9 +491,9 @@ fieldset[disabled] .s-btn {
   height: 3.125rem;
   font-size: 0.8125rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   border: none;
-  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.5);
   background: transparent;
   box-shadow: none;
   border-radius: 0;
@@ -506,41 +506,41 @@ fieldset[disabled] .s-btn {
 }
 
 .s-form-v3__input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s-form-v3__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s-form-v3__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s-form-v3__input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .s-form-v3__input:focus {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.99);
+  color: black;
+  border-color: rgba(0, 0, 255, 0.99);
   box-shadow: none;
 }
 
 .s-form-v3__input:focus::-webkit-input-placeholder {
-  color: #fff;
+  color: black;
 }
 
 .s-form-v3__input:focus::-moz-placeholder {
-  color: #fff;
+  color: black;
 }
 
 .s-form-v3__input:focus:-ms-input-placeholder {
-  color: #fff;
+  color: black;
 }
 
 .s-form-v3__input:focus::placeholder {
-  color: #fff;
+  color: black;
 }
 
 /* Form Input v4 */

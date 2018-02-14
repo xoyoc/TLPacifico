@@ -196,6 +196,20 @@
 	background-color: #832129;
 }
 
+.botonRojo{
+	background: red;
+    color: white;
+}
+
+.botonRojo:hover{
+	background: black;
+    color: red;
+}
+
+.visualidad{
+	display: none;
+}
+
 .footerLogo{
 	width: 40%;
 }
