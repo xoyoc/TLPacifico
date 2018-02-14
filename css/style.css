@@ -157,13 +157,13 @@ a:focus {
 ------------------------------------*/
 ::selection {
   color: #fff;
-  background: #F01931;
+  background: #832129;
   text-shadow: none;
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: #F01931;
+  background: #832129;
   text-shadow: none;
 }
 
