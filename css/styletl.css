@@ -120,6 +120,11 @@
     margin-right: 1em;	
 }
 
+.iconosInicio{
+	width: 20%;
+	margin: 0 1em;
+}
+
 .iconoInformacion{
 	width: 50%;
 }

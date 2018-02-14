@@ -21,8 +21,37 @@ $(window).load(function () {
   var swiper = new Swiper('.js__swiper-clients', {
     slidesPerView: 5,
     // spaceBetween: 50,
-    speed: 1000,
+    speed: 500,
     autoplay: 7000,
+    loop: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      }
+    }
+  })
+
+    // Swiper Asoc
+  var swiper = new Swiper('.js__swiper-asoc', {
+    slidesPerView: 5,
+    spaceBetween: 50,
     loop: true,
     breakpoints: {
       1024: {

@@ -1300,6 +1300,10 @@ fieldset[disabled] .s-btn {
   background: #fff;
 }
 
+.-is-active p{
+  display: none;
+}
+
 .-is-active .s-header__trigger-icon:before, .-is-active .s-header__trigger-icon:after {
   width: 50%;
   -webkit-transition: transform 0.5s, width 0.5s;
@@ -1630,6 +1634,10 @@ fieldset[disabled] .s-btn {
 
 .s-header__shrink .s-header__trigger-icon {
   background: #222324;
+}
+
+.s-header__shrink p {
+  color:black;
 }
 
 /*----------------------------------
