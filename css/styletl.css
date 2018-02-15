@@ -47,9 +47,14 @@
 	margin-left: 2em;
 }
 
-.cajaLogNav{
-	
+.linkgris{
+	color:#4D4D4D;
 }
+
+.linkgris:hover{
+	color:#F01931;
+}
+
 
 .g-bg-color--sky-light {
   background-color: white !important;
@@ -132,6 +137,11 @@
 .margen3y{
 	margin-top: 3em;
 	margin-bottom: 3em;
+}
+
+.parrafoCoti{
+	width: 40%;
+    margin: 0 auto;
 }
 
 .grises img {
