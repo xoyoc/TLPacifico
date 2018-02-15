@@ -51,7 +51,7 @@ $(window).load(function () {
     // Swiper Asoc
   var swiper = new Swiper('.js__swiper-asoc', {
     slidesPerView: 5,
-    spaceBetween: 50,
+    // spaceBetween: 50,
     loop: true,
     breakpoints: {
       1024: {
