@@ -1357,6 +1357,7 @@ fieldset[disabled] .s-btn {
 
 /* Menu List */
 .s-header__nav-menu {
+  margin-top:2em;
   width: 18.75rem;
   float: right;
   text-align: right;
