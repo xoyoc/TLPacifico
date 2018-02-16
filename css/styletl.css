@@ -303,6 +303,23 @@
 	background-color: black;
 }
 
+
+.quienesCorp {
+  display: block;
+  width: 13rem;
+  height: auto;
+  margin: 0 auto;
+  opacity: 1;
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.logoTL{
+	width: 55%;
+}
+
 .footerLogo{
 	width: 40%;
 }

@@ -48,7 +48,7 @@ $(window).load(function () {
     }
   })
 
-    // Swiper Asoc
+  // Swiper Asoc
   var swiper = new Swiper('.js__swiper-asoc', {
     slidesPerView: 5,
     // spaceBetween: 50,
@@ -64,6 +64,35 @@ $(window).load(function () {
       },
       768: {
         slidesPerView: 3,
+        spaceBetween: 30
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      }
+    }
+  })
+
+  // Swiper Corp
+  var swiper = new Swiper('.js__swiper-corp', {
+    slidesPerView: 4,
+    // spaceBetween: 50,
+    loop: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 50
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      768: {
+        slidesPerView: 2,
         spaceBetween: 30
       },
       600: {
