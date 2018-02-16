@@ -112,9 +112,9 @@
 }
 
 .iconosServicios{
-	width: 50%;
-	margin: 1em 42px;
-
+    width: 50%;
+    margin: 1em auto;
+    padding: 1em .5em;
 }
 
 .parrafoServicios{
@@ -123,7 +123,7 @@
 }
 
 .iconosServicios2{
-	width: 10%;
+	width: 10em;
     float: left;
     padding-bottom: 7em;
     margin-right: 1em;	
