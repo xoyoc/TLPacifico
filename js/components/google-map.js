@@ -2,9 +2,9 @@
 
 jQuery(document).ready(function ($) {
   // set your google maps parameters
-  var latitude = 23.988,
-    longitude = -103.022,
-    map_zoom = 6
+  var latitude = 20.690249,
+    longitude = -103.424425,
+    map_zoom = 18
 
   // google map custom marker icon - .png fallback for IE11
   var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1
@@ -205,9 +205,9 @@ jQuery(document).ready(function ($) {
   var contentString = '<div id="content">' +
     '<div id="siteNotice">' +
     '</div>' +
-    '<h2 id="firstHeading" class="firstHeading">TL PACIFÍCO</h2>' +
+    '<h2 id="firstHeading" class="firstHeading">  TL PACIFÍCO</h2>' +
     '<div id="bodyContent">' +
-    '<p>Calle Salvador de Madariaga #5277, <br> Col. Jardines Universidad, C.P. 45110, <br> Zapopan, Jalisco, México</p>' +
+    '<p>  Calle Salvador Madariaga #5277, <br>  Col. Jardines Universidad, C.P. 45110, <br>  Zapopan, Jalisco, México</p>' +
     '</div>' +
     '</div>'
 

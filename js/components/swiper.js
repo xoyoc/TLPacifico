@@ -106,6 +106,35 @@ $(window).load(function () {
     }
   })
 
+  // Swiper Corp
+  var swiper = new Swiper('.js__swiper-alia3', {
+    slidesPerView: 4,
+    // spaceBetween: 50,
+    loop: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 50
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      }
+    }
+  })
+
   // Swiper News
   var swiper = new Swiper('.js__swiper-news', {
     pagination: '.js__swiper-pagination',
