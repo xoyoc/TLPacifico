@@ -74,6 +74,10 @@
 	margin:1.5em 0;
 }
 
+.centradoIconos{
+	align-items: center;
+}
+
 @media (min-width: 62em) {
   .g-container--md {
     width: 80% !important;

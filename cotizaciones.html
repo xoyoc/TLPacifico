@@ -162,9 +162,9 @@
                 </div>
                 <div class="row g-margin-b-50--xs">
                     <div class="col-md-6">
-                        <input type="checkbox" name="maritima" value="maritima" id="maritima"> Marítima<br>
-                        <input type="checkbox" name="terrestre" value="terrestre" id="terrestre"> Marítima + Terrestre<br>
-                        <input type="checkbox" name="aereo" value="aereo" id="aereo"> Aéreo<br>
+                        <input type="checkbox" name="maritima" value="maritima" id="maritima" class="maritima"> Marítima<br>
+                        <input type="checkbox" name="terrestre" value="terrestre" id="terrestre" class="terrestre"> Marítima + Terrestre<br>
+                        <input type="checkbox" name="aereo" value="aereo" id="aereo" class="aereo"> Aéreo<br>
                         
                     </div>
                     <div class="col-md-6">
@@ -296,15 +296,21 @@
             $(document).ready(function(){
                 $("#maritima").on( "click", function() {
                     $('#gmaritima').show(); //muestro mediante id
+                    $("input#terrestre").attr("disabled","true");
+                    $("input#aereo").attr("disabled","true");
                     $('#gterrestre').hide(); //muestro mediante id
                     $('#gaereo').hide(); //muestro mediante id
                 });
                 $("#terrestre").on( "click", function() {
+                    $("input#maritima").attr("disabled","true");
+                    $("input#aereo").attr("disabled","true");
                     $('#gmaritima').hide(); //muestro mediante id
                     $('#gterrestre').show(); //muestro mediante id
                     $('#gaereo').hide(); //muestro mediante id
                 });
                 $("#aereo").on( "click", function() {
+                    $("input#maritima").attr("disabled","true");                    
+                    $("input#terrestre").attr("disabled","true");
                     $('#gmaritima').hide(); //muestro mediante id
                     $('#gterrestre').hide(); //muestro mediante id
                     $('#gaereo').show(); //muestro mediante id

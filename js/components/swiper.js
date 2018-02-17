@@ -55,8 +55,8 @@ $(window).load(function () {
     loop: true,
     breakpoints: {
       1024: {
-        slidesPerView: 5,
-        spaceBetween: 50
+        slidesPerView: 5
+        // spaceBetween: 50
       },
       992: {
         slidesPerView: 3,
