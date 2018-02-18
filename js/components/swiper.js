@@ -84,8 +84,8 @@ $(window).load(function () {
     loop: true,
     breakpoints: {
       1024: {
-        slidesPerView: 4,
-        spaceBetween: 50
+        slidesPerView: 4
+        // spaceBetween: 50
       },
       992: {
         slidesPerView: 3,
@@ -106,15 +106,15 @@ $(window).load(function () {
     }
   })
 
-  // Swiper Corp
+  // Swiper Tres Alianzas
   var swiper = new Swiper('.js__swiper-alia3', {
-    slidesPerView: 4,
+    slidesPerView: 3,
     // spaceBetween: 50,
     loop: true,
     breakpoints: {
       1024: {
-        slidesPerView: 4,
-        spaceBetween: 50
+        slidesPerView: 3
+        // spaceBetween: 50
       },
       992: {
         slidesPerView: 3,
