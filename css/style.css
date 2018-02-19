@@ -1298,6 +1298,8 @@ fieldset[disabled] .s-btn {
 
 .-is-active .s-header__trigger-icon {
   background: #fff;
+  top: 34%;
+  left: 50%;  
 }
 
 .-is-active p{
