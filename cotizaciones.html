@@ -127,7 +127,7 @@
         <div id="js__scroll-to-section" class="g-container--md g-padding-y-80--xs g-padding-y-125--sm">
             <h3 class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs text-center">TL PACIFÍCO</h3>
             <h2 class="g-font-size-32--xs g-font-size-36--md g-text-center--xs g-margin-b-10--xs textoBold">Tu mejor opción en <br> logística y gestión de carga</h2>
-            <p class="parrafoCoti g-padding-y-20--xs">¿Necesitas cotizar importaciones y exportaciones?<br>Completa los siguientes datos con tus requerimientos.</p>
+            <p class="parrafoCoti g-padding-y-20--xs textoCenter">¿Necesitas cotizar importaciones y exportaciones?<br>Completa los siguientes datos con tus requerimientos.</p>
             <form action="" class="center-block g-width-500--sm g-width-550--md">
                 <div class="row g-margin-b-50--xs">
                     <div class="col-md-6">
@@ -145,6 +145,7 @@
                         <input type="phone" name="telefono" class="form-control s-form-v3__input" placeholder="* Telefono">
                     </div>
                 </div>
+                <p>Mercancía</p>
                 <div class="row g-margin-b-50--xs">
                    <div class="col-md-12">
                        <input type="text" class="form-control s-form-v3__input" placeholder="Origen de la mercancía">
@@ -162,10 +163,22 @@
                 </div>
                 <div class="row g-margin-b-50--xs">
                     <div class="col-md-6">
-                        <input type="checkbox" name="maritima" value="maritima" id="maritima" class="maritima"> Marítima<br>
-                        <input type="checkbox" name="terrestre" value="terrestre" id="terrestre" class="terrestre"> Marítima + Terrestre<br>
-                        <input type="checkbox" name="aereo" value="aereo" id="aereo" class="aereo"> Aéreo<br>
-                        
+                        <div class="checkbox">
+                            <label for="maritima">
+                                <input type="checkbox" name="maritima" value="maritima" id="maritima" class="maritima"> Marítima
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="terrestre">
+                                <input type="checkbox" name="terrestre" value="terrestre" id="terrestre" class="terrestre">Marítima + Terrestre
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="aereo">
+                                <input type="checkbox" name="aereo" value="aereo" id="aereo" class="aereo">
+                                Aéreo
+                            </label>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <fieldset class="visualidad" id="gmaritima">
@@ -186,9 +199,9 @@
                         </fieldset>
                         <fieldset class="visualidad" id="gaereo">
                             <p>Detalles Aéreo</p>
-                            <input type="text" class="form-control s-form-v3__input" placeholder="Alto">
-                            <input type="text" class="form-control s-form-v3__input" placeholder="Ancho">
-                            <input type="text" class="form-control s-form-v3__input" placeholder="Alto">
+                            <input type="text" class="form-control s-form-v3__input g-width-90--xs" placeholder="Alto">
+                            <input type="text" class="form-control s-form-v3__input g-width-90--xs" placeholder="Ancho">
+                            <input type="text" class="form-control s-form-v3__input g-width-90--xs" placeholder="Alto">
                         </fieldset>                                                
                     </div>
                 </div>
@@ -294,27 +307,39 @@
 
         <script type="text/javascript">
             $(document).ready(function(){
-                $("#maritima").on( "click", function() {
-                    $('#gmaritima').show(); //muestro mediante id
-                    $("input#terrestre").attr("disabled","true");
-                    $("input#aereo").attr("disabled","true");
-                    $('#gterrestre').hide(); //muestro mediante id
-                    $('#gaereo').hide(); //muestro mediante id
+                $("#maritima").on( "change", function() {
+                    if ($('#maritima').is(':checked') ) {
+                        $('#gmaritima').show(); //muestro mediante id
+                        $("input#terrestre").attr("disabled","true");
+                        $("input#aereo").attr("disabled","true");
+                    } else {
+                        $("input#terrestre").removeAttr('disabled');
+                        $("input#aereo").removeAttr('disabled');
+                        $('#gmaritima').hide(); //muestro mediante id                   
+                    }
                 });
-                $("#terrestre").on( "click", function() {
-                    $("input#maritima").attr("disabled","true");
-                    $("input#aereo").attr("disabled","true");
-                    $('#gmaritima').hide(); //muestro mediante id
-                    $('#gterrestre').show(); //muestro mediante id
-                    $('#gaereo').hide(); //muestro mediante id
+                $("#terrestre").on( "change", function() {
+                    if ($('#terrestre').is(':checked') ) {
+                        $('#gterrestre').show(); //muestro mediante id
+                        $("input#maritima").attr("disabled","true");
+                        $("input#aereo").attr("disabled","true");
+                    } else {
+                        $("input#maritima").removeAttr('disabled');
+                        $("input#aereo").removeAttr('disabled');
+                        $('#gterrestre').hide(); //muestro mediante id                   
+                    }
                 });
-                $("#aereo").on( "click", function() {
-                    $("input#maritima").attr("disabled","true");                    
-                    $("input#terrestre").attr("disabled","true");
-                    $('#gmaritima').hide(); //muestro mediante id
-                    $('#gterrestre').hide(); //muestro mediante id
-                    $('#gaereo').show(); //muestro mediante id
-                });
+                $("#aereo").on( "change", function() {
+                    if ($('#aereo').is(':checked') ) {
+                        $('#gaereo').show(); //muestro mediante id
+                        $("input#terrestre").attr("disabled","true");
+                        $("input#maritima").attr("disabled","true");
+                    } else {
+                        $("input#terrestre").removeAttr('disabled');
+                        $("input#maritima").removeAttr('disabled');
+                        $('#gaereo').hide(); //muestro mediante id                   
+                    }
+                });                
              });                         
         </script>
         <!--========== END JAVASCRIPTS ==========-->
